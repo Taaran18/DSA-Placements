@@ -17,7 +17,7 @@ class Stack {
         this.top = -1;
     }
 
-    // Function to check if the stack is empty 
+    // Function to check if the stack is empty
     boolean isEmpty() {
         return top == -1;
     }
@@ -48,7 +48,7 @@ class Stack {
         if (isEmpty()) {
             System.out.println("Underflow");
             return -1;
-        } 
+        }
 
         // If not empty, pop the element from the stack
         else {
@@ -64,8 +64,8 @@ class Stack {
         if (isEmpty()) {
             System.out.println("Stack empty");
             return -1;
-        } 
-        
+        }
+
         // If not empty, return the top element of the stack
         else {
             return stack[top];
@@ -82,14 +82,15 @@ class Stack {
         // Check if the stack is empty
         if (isEmpty()) {
             System.out.println("Stack empty");
-        } 
-        
+        }
+
         // Check if the position is valid
         else if (pos < 0 || pos > top) {
             System.out.println("Invalid position");
-        } 
-        
-        // If not empty and position is valid, change the value of the element at the given position
+        }
+
+        // If not empty and position is valid, change the value of the element at the
+        // given position
         else {
             stack[pos] = val;
             System.out.println("Value changed at " + pos);
@@ -101,8 +102,8 @@ class Stack {
         // Check if the stack is empty
         if (isEmpty()) {
             System.out.println("Stack empty");
-        } 
-        
+        }
+
         // If not empty, display the elements of the stack
         else {
             for (int i = top; i >= 0; i--) {
